@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+
+{% block main %}
+<div class="innercontainer">
+<div class="top-section">
+    <img src="{{ url_for('static', filename='864117c96561e3b58bc03f2d4202cabb.jpg') }}" class="img">
+    <h1>Von Harris</h1>
+    <p>@von</p>
+    <p>Kingston, Jamaica</p>
+    <p>{{ date }}</p>
+</div>
+<div class="low-section">
+    <p>I am a software engneering student at the University of the West Indies. Contact me if you'd like to work together on a project.</p>
+    <div class="stats-container">
+        <div class="stat-item">
+            <div class="stat-number">5</div>
+           <p> Posts</p>
+        </div>
+        <div class="stat-item">
+            <div class="stat-number">0</div>
+            <p>Following</p>
+        </div>
+        <div class="stat-item">
+            <div class="stat-number">1000</div>
+            <p>Followers</p>
+        </div>
+    </div>
+    <button class="follow-button">Follow</button>
+</div>
+</div>
+
+{% endblock %}
